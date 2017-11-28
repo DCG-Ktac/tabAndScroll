@@ -1,13 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TabAndScroll"
              x:Class="TabAndScroll.MainPage">
-    <ContentPage.Content>
+    <ContentPage Title="News">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="img2.png"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </ContentPage>
+    <ContentPage Title="Events">
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="img3.png"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Enrichment">
+        <StackLayout>
+            <Button Text="test" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
